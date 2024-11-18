@@ -1,69 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BUGRA FC WEB SİTESİ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .main-content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form {
+            width: 60%;
+            margin: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery div {
+            width: 30%;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .service {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service div {
+            width: 30%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            color: #333;
+        }
+
+        .service p {
+            color: #666;
+        }
+
+        .blog-posts {
+            margin-top: 40px;
+        }
+
+        .blog-posts article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-posts h3 {
+            color: #333;
+        }
+
+        .blog-posts p {
+            color: #666;
+        }
+
+        .blog-posts a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        .blog-posts a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Navbar -->
-        <div class="navbar">
-            <div class="logo">
-                <a href="#">
-                    <img src="logo.png" alt="Logo">
-                </a>
+    <!-- Header Section -->
+    <header>
+        <h1>SİNCE 2021</h1>
+        <p>KİŞİSEL BİR WEBSİTEDİR</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Anasayfa</a>
+        <a href="#about">Hakkında</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#portfolio">Portföy</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content" id="home">
+        <h2>Hoşgeldiniz!</h2>
+        <p>Web geliştirme, tasarım ve yazılım dünyasında benimle tanışın. Yaratıcı projelerde birlikte çalışalım.</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="main-content" id="about">
+        <h2>Hakkımda</h2>
+        <p>Ben bir web geliştiricisi ve tasarımcıyım. Yaratıcı projeler üzerinde çalışarak hem kullanıcı dostu hem de estetik açıdan tatmin edici sonuçlar elde etmeyi hedefliyorum. Web tasarımına olan ilgim yıllar önce başladı ve bugüne kadar birçok projede görev aldım.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="main-content" id="services">
+        <h2>Hizmetlerim</h2>
+        <div class="service">
+            <div>
+                <h3>Web Tasarımı</h3>
+                <p>Modern ve kullanıcı dostu web siteleri tasarlıyorum. Her türlü iş ihtiyaçlarına uygun web çözümleri sunuyorum.</p>
             </div>
-            <ul>
-                <li><a href="#" class="active">Ana Sayfa</a></li>
-                <li><a href="#" class="active">Hakkında</a></li>
-                <li><a href="#" class="active">Hizmetler</a></li>
-                <li><a href="#" class="active">Projeler</a></li>
-                <li><a href="#" class="active">İletişim</a></li>
-            </ul>
-        </div>
-
-        <!-- Center content -->
-        <div class="center">
-            <h1>BUGRA FC WEBİSTESİ</h1>
-            <h2>HOŞGELDİNİZ</h2>
-            <div class="buttons">
-                <button>Daha fazla...</button>
-                <button>Abone ol!</button>
+            <div>
+                <h3>Grafik Tasarım</h3>
+                <p>Marka kimliği, logo tasarımı, sosyal medya görselleri gibi grafik tasarım hizmetleri sunuyorum.</p>
             </div>
-            <div class="social-media">
-                <a href="https://www.tiktok.com/@bugrafc26__" target="_blank">
-                    <img src="tiktok-icon.png" alt="TikTok">
-                </a>
-                <a href="https://www.youtube.com/@BUGRAFC" target="_blank">
-                    <img src="youtube-icon.png" alt="YouTube">
-                </a>
-                <a href="https://www.twitch.tv/bugrafcxy" target="_blank">
-                    <img src="twitch-icon.png" alt="Twitch">
-                </a>
-                <a href="https://www.instagram.com/bugrafc27/" target="_blank">
-                    <img src="instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/bugra-k%C4%B1z%C4%B1lp%C4%B1nar-394285254/" target="_blank">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
-                <a href="https://x.com/bugrafcyoutube" target="_blank">
-                    <img src="x-icon.png" alt="x-icon">
-                </a>
-               
-
-
-
-                </a>
+            <div>
+                <h3>SEO ve Dijital Pazarlama</h3>
+                <p>Web sitenizin Google'da üst sıralarda yer alması için SEO hizmeti sağlıyorum. Dijital pazarlama stratejileri oluşturuyorum.</p>
             </div>
-            
-            
-            
-
-
-
-
         </div>
     </div>
-</body>
-</html>
+
+    <!-- Portfolio Section -->
+    <div class="main-content" id="portfolio">
+        <h2>Portföy</h2>
+        <p>Aşağıda yaptığım bazı projelere göz atabilirsiniz:</p>
+        <div class="gallery">
+            <div><img src="https://via.placeholder.com/300x200" alt="Proje 1"></div>
+            <div><img src="https://via.placeholder.com/300x200" alt="Proje 2"></div>
+            <div><img src="https://via.placeholder.com/300x200" alt="Proje 3"></div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="main-content" id="blog">
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <article>
+                <h3><a href="#">Web Tasarımında Trendler</a></h3>
+                <p>Web tasarım dünyasında sürekli değişen trendleri keşfedin. 2024'te hangi tasarım yaklaşımları popüler olacak?</p>
+            </article>
+            <article>
+                <h3><a href="#">SEO İpuçları</a></h3>
+                <p>SEO konusunda yeni başlayanlar için temel ipuçları. Web sitenizin görünürlüğünü artırmanın yollarını öğrenin.</p>
+            </article>
+            <article>
+                <h3><a href="#">Başarılı Bir Logo Tasarımı</a></h3>
+                <p>Logo tasarımı, bir markanın yüzüdür. Etkili bir logo tasarımı nasıl yapılır? Başarılı örnekler ve ipuçları.</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main-content" id="contact">
+        <h2>İletişim</h2>
+        <p>Benimle iletişime geçmek için aşağıdaki formu kullanabilirsiniz:</p>
+        <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&
