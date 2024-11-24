@@ -1,0 +1,152 @@
+/* Sayfa için etkileyici renk geçişi */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Sayfa yüksekliği */
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Renk geçişi */
+}
+
+/* Başlık için renk geçişi */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Başlık için farklı geçiş */
+    color: white;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* İçerik kısmı */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Şeffaf arka plan */
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+/* Footer için renk geçişi */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Footer için renk geçişi */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header .logo {
+    width: 100px;  /* Logo boyutunu ayarlayın */
+    height: auto;  /* Yükseklik oranı korunsun */
+    margin-bottom: 10px;  /* Başlık ile logo arasındaki mesafe */
+}
+
+
+
+header .logo {
+    width: 50px;  /* Logoyu 50px genişliğinde yapıyoruz */
+    height: auto;  /* Yükseklik oranını korur */
+    margin-bottom: 10px;  /* Başlık ile logo arasındaki mesafe */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header .logo {
+    width: 50px;  /* Logoyu küçülttük */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Genel stil kodları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    /* Mobil cihazlar için stil değişiklikleri */
+    body {
+        font-size: 14px;
+    }
+}
