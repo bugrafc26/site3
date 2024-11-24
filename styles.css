@@ -1,0 +1,221 @@
+/* Temel Stil Ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Yatay kaydırmayı engeller */
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar Stili */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Orta İçerik */
+.center {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.center h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.center h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: #007acc;
+    color: white;
+}
+
+/* Sosyal Medya İkonları */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* İçerik Bölümleri */
+.content-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
+
+/* Dikey Reklam Panoları */
+.vertical-ad {
+    position: fixed;
+    top: 0;
+    width: 120px; /* Reklam genişliği */
+    height: 100%; /* Reklam yüksekliği */
+    background: rgba(0, 0, 0, 0.7); /* Saydam siyah arka plan */
+    z-index: 1000; /* Öncelikli görünüm */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-ad img {
+    width: auto;
+    height: 90%; /* Görsel yüksekliği */
+    object-fit: cover;
+    border-radius: 5px; /* Görsel kenarlarını yuvarlar */
+}
+
+.vertical-ad.left {
+    left: 0; /* Sol tarafa sabitler */
+}
+
+.vertical-ad.right {
+    right: 0; /* Sağ tarafa sabitler */
+}
+
+/* Responsive Tasarım (Küçük Ekranlarda Reklamları Gizle) */
+@media (max-width: 768px) {
+    .vertical-ad {
+        display: none;
+    }
+}
+
+/* Global sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sosyal Medya Hesapları Bölümü */
+.social-media-section {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.social-media-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Simge aralıklarını daralttık */
+}
+
+.social-media-icons a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-media-icons a img {
+    width: 40px; /* Simge genişliği küçültüldü */
+    height: 40px; /* Simge yüksekliği küçültüldü */
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+}
